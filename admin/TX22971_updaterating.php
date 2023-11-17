@@ -1,6 +1,6 @@
 <?php
-include 'TX22971_member.php';
-require 'TX22971_dbcon.php';
+include './TX22971_member.php';
+require './TX22971_dbcon.php';
 $rid = $_GET['nid'];
 ?>
 
@@ -10,7 +10,7 @@ $rid = $_GET['nid'];
   <meta charset="UTF-8">
 <Title> Rate MyProfessor </Title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="style/TX22971_style1.css">
+<link rel="stylesheet" href="../style/TX22971_style1.css">
 
 <Script>
 function updateTextInput(val) 
@@ -88,7 +88,7 @@ function onlyOneCheckBox() {
 <body onload = "welcomeFunction()" >
 <Center>
 <H1> Rate MyProfessor </H1>
-<Form action=TX22971_updateinsertrating.php method=post enctype="multipart/form-data">
+<Form action= ./TX22971_updateinsertrating.php method=post enctype="multipart/form-data">
 <?php
 $sql = "SELECT pid, pname, pemail, pcourse, puniversity, rid, p_fk, rdate, rrating, rdifficulty, rtag, ragain, rcomments from TX22971_tblprofessor JOIN TX22971_tblrating ON TX22971_tblprofessor.pid = TX22971_tblrating.p_fk where rid=$rid";
 $result = $conn->query($sql);
@@ -129,7 +129,7 @@ echo "</Td><Tr><Td>";
 echo "<Center><Table border=0 width=70%><Tr><Td valign=top colspan=2>";
 echo "<Input type=submit value=Update_Raiting_Comments>  </Form>";
 echo "</Td><Td valign=top>";
-echo "<form action= TX22971_displayrating.php><Input type=submit value=Cancel></form>";
+echo "<form action= ./TX22971_displayrating.php><Input type=submit value=Cancel></form>";
 echo "</Td></Tr></Table></Center>";
 echo "</Td></Tr></Table>";
 echo "</Center>";

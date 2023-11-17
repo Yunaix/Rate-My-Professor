@@ -1,12 +1,12 @@
 <head><title> Display Data </title> 
-<link rel=stylesheet href=css/TX22971_style.css> 
+<link rel=stylesheet href= './css/TX22971_style.css'> 
 </head>
 
 <?php
-include 'TX22971_member.php';
+include './TX22971_member.php';
 
 
-require 'TX22971_dbcon.php';
+require './TX22971_dbcon.php';
 
 $sql = "SELECT pcid, pcourse
 FROM  TX22971_tblpcourse";
@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 echo "<Center>";
 echo "<BR>";
 Echo "<H2><BR><BR><BR>
-<a href= TX22971_ncourse.php > Add New Course         ---     <A Href= TX22971_page1.php> [ Home ] </A></a></H2>";
+<a href= ./TX22971_ncourse.php > Add New Course         ---     <A Href= ./TX22971_page1.php> [ Home ] </A></a></H2>";
 echo "<BR>";
 echo "<BR>";
 echo "<HR>";

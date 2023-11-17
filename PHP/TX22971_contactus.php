@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Rate My Professor - Contact Us</title>
-	<link rel="stylesheet" href="style/TX22971_style.css">
-	<link rel="stylesheet" href="style/TX22971_stylemenu.css">
+	<link rel="stylesheet" href="../style/TX22971_style.css">
+	<link rel="stylesheet" href="../style/TX22971_stylemenu.css">
 	
 	<style>
 		.hero-image {
-			background-image: url("bg.png");
+			background-image: url("./assests/bg.png");
 			background-color: #cccccc;
 			height: 100px;
 			background-position: center;
@@ -108,22 +108,22 @@
 <body>
 
 <?php
-	require 'admin/TX22971_dbcon.php';
+	require '../admin/TX22971_dbcon.php';
 ?>
 
 	<header class="banner">
-		<img src="images/logo.svg">
+		<img src="../assests/images/logo.svg">
 		<div class="panel panel-nav">
 			<center>
 				<div class="dropdown">
-				<button class="dropbtn"><a href="TX22971_home1.php"><b>Home</b></button></a>
+				<button class="dropbtn"><a href="./TX22971_home1.php"><b>Home</b></button></a>
 				</div>
 				
 				<div class="dropdown">
-				<button class="dropbtn"><a href="admin/TX22971_index1.html"><b> Login </b></a></button>
+				<button class="dropbtn"><a href="../admin/TX22971_index1.html"><b> Login </b></a></button>
 				</div>
 				<div class="dropdown">
-				<button class="dropbtn"><a href="TX22971_contactus.php"><b> Contact Us </b></a></button>
+				<button class="dropbtn"><a href="../admin/TX22971_contactus.php"><b> Contact Us </b></a></button>
 				</div>
 			</center>
 		</div>
@@ -147,7 +147,7 @@
 			<article>
 
 				<div class="container">
-				 <form action = "TX22971_sendcontact.php" method = "post">
+				 <form action = "./TX22971_sendcontact.php" method = "post">
 				<input type = "text" name = "cname" placeholder = "Name">
 				<input type = "email" name = "cemail" placeholder = "Email">
 				<input type = "text" name = "csubject" placeholder = "Subject">

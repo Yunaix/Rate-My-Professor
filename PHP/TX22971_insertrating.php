@@ -1,5 +1,5 @@
 <?php
-require 'admin/TX22971_dbcon.php';
+require '../admin/TX22971_dbcon.php';
 
 // define variables and set to empty values
 $pid = $_GET['pid'];
@@ -43,5 +43,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-header("Location: TX22971_dprofessor.php?pid=$pid");
+header("Location: ./TX22971_dprofessor.php?pid=$pid");
 ?>

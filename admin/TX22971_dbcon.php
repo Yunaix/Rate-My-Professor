@@ -1,7 +1,7 @@
 <?php
 // Connection
 // File Name is dbcon.php
-include 'TX22971_member.php';
+include './TX22971_member.php';
 
 $servername = "studentdb-maria.gl.umbc.edu";
 $username = "eunicea2";

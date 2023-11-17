@@ -1,5 +1,5 @@
 <?php
-require 'admin/TX22971_dbcon.php';
+require '../admin/TX22971_dbcon.php';
 $pid = $_GET['pid'];
 ?>
 
@@ -9,7 +9,7 @@ $pid = $_GET['pid'];
   <meta charset="UTF-8">
 <Title> Rate MyProfessor </Title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="style/TX22971_style1.css">
+<link rel="stylesheet" href="../style/TX22971_style1.css">
 <Script>
 function updateTextInput(val) 
 		{
@@ -86,7 +86,7 @@ function onlyOneCheckBox() {
 
 <Center>
 <H1> Rate MyProfessor </H1>
-<Form action=TX22971_insertrating.php method=get enctype="multipart/form-data">
+<Form action= ./TX22971_insertrating.php method=get enctype="multipart/form-data">
 <?php
 echo "<input type=hidden name=pid value=$pid>";
 echo "<Table border=0>";
@@ -169,7 +169,7 @@ echo "</Td><Tr><Td colspan=2>";
 echo "<Center><Table border=0 width=70%><Tr><Td valign=top colspan=2>";
 echo "<Input type=submit value=Submit_Raiting>  </Form>";
 echo "</Td><Td valign=top>";
-echo "<form action=home1.php><Input type=submit value=Cancel></form>";
+echo "<form action= ./TX22971_home1.php><Input type=submit value=Cancel></form>";
 echo "</Td></Tr></Table></Center>";
 echo "</Td></Tr></Table>";
 echo "</Center>";

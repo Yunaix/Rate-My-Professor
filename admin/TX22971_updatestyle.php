@@ -2,12 +2,12 @@
 <html>
 <head>
   <title> Stylesheet </title> 
-  <link rel="stylesheet" href="css/TX22971_style.css"> 
+  <link rel="stylesheet" href="../css/TX22971_style.css"> 
 </head>
 
 <?php
-include 'TX22971_member.php';
-require 'TX22971_dbcon.php';
+include './TX22971_member.php';
+require './TX22971_dbcon.php';
 
 echo "<Center>";
 echo "<h2><BR><a href='TX22971_page1.php'>[ Home ]</a></h2>";
@@ -15,7 +15,7 @@ echo "<BR><BR><hr>";
 ?>
 
   <body>
-   <form method="post" action="TX22971_colors.php">
+   <form method="post" action="./TX22971_colors.php">
   <label for="h1_color">H1 Color:</label>
   <input type="color" id="h1_color" name="h1_color"><br><br>
   <label for="h2_color">H2 Color:</label>
@@ -51,9 +51,9 @@ if(isset($_POST['form_submitted'])) {
   
   // Update the CSS files with the new color values
   $css_files = array(
-    "css/TX22971_style.css",
-    "css/TX22971_style1.css",
-    "css/TX22971_stylemenu.css"
+    "../css/TX22971_style.css",
+    "../css/TX22971_style1.css",
+    "../css/TX22971_stylemenu.css"
     // Add more CSS files here as needed
   );
   
@@ -71,7 +71,7 @@ if(isset($_POST['form_submitted'])) {
   }
   
   // Redirect back to the homepage
-  header('Location: TX22971_page1.php');
+  header('Location: ./TX22971_page1.php');
   exit();
 }
 ?>

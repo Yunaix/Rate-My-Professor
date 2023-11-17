@@ -1,6 +1,6 @@
 <?php
-include 'TX22971_member.php';
-require 'TX22971_dbcon.php';
+include './TX22971_member.php';
+require './TX22971_dbcon.php';
 
 //$sql = "SELECT * from tblnews LEFT JOIN tblcategory ON tblnews.newscatid = tblcategory.catid";
 //$result = $conn->query($sql);
@@ -8,8 +8,8 @@ require 'TX22971_dbcon.php';
 echo "<HTML>";
 echo "<Title> Add Professor </Title>";
 echo "<Center>";
-echo "<H1> Insert New Professor Data        ---     <A Href= TX22971_page1.php> Home </A></H1>";
-echo "<Form action= TX22971_insertprofessor.php method=post>";
+echo "<H1> Insert New Professor Data        ---     <A Href= ./TX22971_page1.php> Home </A></H1>";
+echo "<Form action= ./TX22971_insertprofessor.php method=post>";
 echo "<Table border=1>";
 echo "<Tr><Td>";
 echo "<H3> Professor Name ";
@@ -56,17 +56,17 @@ echo "</Td><Td>";
 echo "<Table border=0 width=70%><Tr><Td valign=top>";
 echo "<Input type=submit value=Submit>  </Form>";
 echo "</Td><Td valign=top>";
-echo "<form action= TX22971_displayprofessor.php><Input type=submit value=Cancel></form>";
+echo "<form action= ./TX22971_displayprofessor.php><Input type=submit value=Cancel></form>";
 echo "</Td></Tr></Table>";
 echo "</Td></Tr></Table>";
 
 echo "<Table border=1>";
 echo "<Tr>";
-echo "<Td><Form action= TX22971_insertpname.php method=post> New Professor Name : </Td><Td><Input text name=pname> <Input type=submit value=Submit>  </Form></Td>";
+echo "<Td><Form action= ./TX22971_insertpname.php method=post> New Professor Name : </Td><Td><Input text name=pname> <Input type=submit value=Submit>  </Form></Td>";
 echo "<Tr></Tr>";
-echo "<Td><Form action= TX22971_insertpuniversity.php method=post> New University : </Td><Td><Input text name=puniversity> <Input type=submit value=Submit>  </Form></Td>";
+echo "<Td><Form action= ./TX22971_insertpuniversity.php method=post> New University : </Td><Td><Input text name=puniversity> <Input type=submit value=Submit>  </Form></Td>";
 echo "<Tr></Tr>";
-echo "<Td><Form action= TX22971_insertpcourse.php method=post> New Course : </Td><Td><Input text name=pcourse> <Input type=submit value=Submit>  </Form></Td>";
+echo "<Td><Form action= ./TX22971_insertpcourse.php method=post> New Course : </Td><Td><Input text name=pcourse> <Input type=submit value=Submit>  </Form></Td>";
 echo "</Tr></Table>";
 echo "</Center>";
 echo "</HTML>";

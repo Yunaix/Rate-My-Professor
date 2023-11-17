@@ -1,8 +1,8 @@
 <?php
-include 'TX22971_member.php';
+include './TX22971_member.php';
 // Show MyGuests Data
 
-require 'TX22971_dbcon.php';
+require './TX22971_dbcon.php';
 
 // define variables and set to empty values
 $id = $cc = "";
@@ -21,5 +21,5 @@ $cc = $_POST['comment'];
   
 $conn->close();
 
-header('Location: TX22971_displayrating.php');
+header('Location: ./TX22971_displayrating.php');
 ?>

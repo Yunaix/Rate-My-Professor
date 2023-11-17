@@ -1,8 +1,8 @@
 <?php
-include 'TX22971_member.php';
+include './TX22971_member.php';
 // Show MyGuests Data
 
-require 'TX22971_dbcon.php';
+require './TX22971_dbcon.php';
 
 // define variables and set to empty values
 $catname = "";
@@ -24,5 +24,5 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-header('Location: TX22971_displayprofessor.php');
+header('Location: ./TX22971_displayprofessor.php');
 ?>

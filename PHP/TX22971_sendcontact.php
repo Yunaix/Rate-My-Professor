@@ -31,5 +31,5 @@ else{
 }
 
 $conn->close();
-header('Location: TX22971_contactus.php');
+header('Location: ./TX22971_contactus.php');
 ?>

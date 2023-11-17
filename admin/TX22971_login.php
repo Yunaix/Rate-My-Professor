@@ -1,6 +1,6 @@
 <?php
 
-require 'TX22971_dbcon.php';
+require './TX22971_dbcon.php';
 $tbl_name="TX22971_members"; // Table name 
 
 
@@ -26,10 +26,10 @@ if($count==1){
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
 	
-	header("Location: TX22971_page1.php"); /* Redirect browser */
+	header("Location: ./TX22971_page1.php"); /* Redirect browser */
 	}
 else
 	{
-	header("Location: TX22971_index1.html"); /* Redirect browser */
+	header("Location: ./TX22971_index1.html"); /* Redirect browser */
 exit();
 }

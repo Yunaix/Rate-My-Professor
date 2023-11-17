@@ -1,8 +1,8 @@
 <html>
 <head>
 	<title> Rate MyProfessor - Template </title>
-	<link rel="stylesheet" href="style/TX22971_style.css">
-	<link rel="stylesheet" href="style/TX22971_stylemenu.css">
+	<link rel="stylesheet" href="../style/TX22971_style.css">
+	<link rel="stylesheet" href="../style/TX22971_stylemenu.css">
 
 </head>
 
@@ -10,7 +10,7 @@
 
 <style>
 .hero-image {
-  background-image: url("bg.png");
+  background-image: url("../assests/bg.png");
   background-color: #cccccc;
   height: 100px;
   background-position: center;
@@ -38,23 +38,23 @@
 
 
 <?php
-require 'admin/TX22971_dbcon.php';
+require '../admin/TX22971_dbcon.php';
 
 ?>
 
 	<header class="banner">
-	<img src="images/logo.svg">  
+	<img src="../assests/logo.svg">  
 
 		<div class="panel panel-nav">
 			<center>
 				<div class="dropdown">
-				<button class="dropbtn"><A href=TX22971_home1.php ><B> HOME </B></A></button>
+				<button class="dropbtn"><A href= ./TX22971_home1.php ><B> HOME </B></A></button>
 				</div>
 				<div class="dropdown">
-				<button class="dropbtn"><A href=admin/TX22971_index1.html ><B> Login </B></A></button>
+				<button class="dropbtn"><A href= ./admin/TX22971_index1.html ><B> Login </B></A></button>
 				</div>
 				<div class="dropdown">
-				<button class="dropbtn"><A href=TX22971_contactus.php ><B> ContactUs </B></A></button>
+				<button class="dropbtn"><A href= ./TX22971_contactus.php ><B> ContactUs </B></A></button>
 				</div>
 			</center>
 		</div>
@@ -72,7 +72,7 @@ require 'admin/TX22971_dbcon.php';
 				<Center>
 				<div class="hero-image">
 					<div class="hero-text">
-					<image src=bglogo.svg />
+					<image src= ../assests/bglogo.svg />
 					<p>Professors</p>
 					<div>
 
@@ -99,8 +99,8 @@ require 'admin/TX22971_dbcon.php';
 					echo 	"
 							
 								<div class=hero-backgroundcolor>
-									<p> ".$row["pid"]." - <a href= TX22971_dprofessor.php?pid=".$row["pid"].">".$row["pname"]."</a> - ".$row["pcourse"]." - ".$row["puniversity"].":&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-									<a href= TX22971_rprofessor.php?pid=".$row["pid"].">Rate Professor</a><br><br></p><Hr>
+									<p> ".$row["pid"]." - <a href= ./TX22971_dprofessor.php?pid=".$row["pid"].">".$row["pname"]."</a> - ".$row["pcourse"]." - ".$row["puniversity"].":&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+									<a href= T./X22971_rprofessor.php?pid=".$row["pid"].">Rate Professor</a><br><br></p><Hr>
 								</div>
 							";
 						

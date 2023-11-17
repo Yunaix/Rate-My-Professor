@@ -3,8 +3,8 @@
 </head>
 
 <?php
-include 'TX22971_member.php';
-require 'TX22971_dbcon.php';
+include './TX22971_member.php';
+require './TX22971_dbcon.php';
 
 $sql = "SELECT * FROM  TX22971_tblcontactus order by cid DESC";
 $result = $conn->query($sql);
@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 echo "<Center>";
 echo "<BR>";
 Echo "<H2><BR><BR><BR>
-Contact Us         ---     <A Href= TX22971_page1.php> [ Home ] </A></a></H2>";
+Contact Us         ---     <A Href= ./TX22971_page1.php> [ Home ] </A></a></H2>";
 echo "<BR>";
 echo "<HR>";
 

@@ -1,5 +1,5 @@
 <?php
-require 'TX22971_dbcon.php';
+require './TX22971_dbcon.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_submitted'])) {
   $h1_color = $_POST["h1_color"];

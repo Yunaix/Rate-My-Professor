@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require 'admin/TX22971_dbcon.php';
+require '../admin/TX22971_dbcon.php';
 
 //$sqlQuery = "SELECT student_id,student_name,marks FROM tbl_marks ORDER BY student_id";
 $sqlQuery = "SELECT rrating from TX22971_tblrating p_fk=$id";

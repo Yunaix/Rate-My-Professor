@@ -1,5 +1,5 @@
 <?php
-include 'TX22971_member.php';
+include './TX22971_member.php';
 ?>
 <html>
 <body>

@@ -1,5 +1,5 @@
 <?php
- require 'admin/TX22971_dbcon.php';
+ require '../admin/TX22971_dbcon.php';
 
 $id = $_GET['pid'];
 
