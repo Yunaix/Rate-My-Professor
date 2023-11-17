@@ -1,0 +1,40 @@
+<?php
+include 'TX22971_member.php';
+require 'TX22971_dbcon.php';
+
+//$sql = "SELECT * from tblnews LEFT JOIN tblcategory ON tblnews.newscatid = tblcategory.catid";
+//$result = $conn->query($sql);
+
+echo "<HTML>";
+echo "<Title> Add Course </Title>";
+echo "<Center>";
+echo "<H1> Insert New Course Data        ---     <A Href= TX22971_page1.php> Home </A></H1>";
+echo "<Form action= TX22971_insertcourse.php method=post>";
+echo "<Table border=1>";
+echo "<Tr><Td>";
+echo "<H3> Professor Course ";
+echo "</Td><Td>";
+echo "<Select name = course>";
+$sql1 = "SELECT * from TX22971_tblpcourse";
+$result2 = $conn->query($sql1);
+    while($row2 = $result2->fetch_assoc()) 
+	{
+		echo "<option value='$row2[pcourse]'>$row2[pcourse]</option>";
+	}
+echo "</select> <Br>";
+echo "</Td></Tr>";
+echo "</Td><Td>";
+echo "<Table border=0 width=70%><Tr><Td valign=top>";
+echo "<Input type=submit value=Submit>  </Form>";
+echo "</Td><Td valign=top>";
+echo "<form action= TX22971_displaycourse.php><Input type=submit value=Cancel></form>";
+echo "</Td></Tr></Table>";
+echo "</Td></Tr></Table>";
+
+echo "<Table border=1>";
+echo "<Tr>";
+echo "<Td><Form action= TX22971_insertpcourse.php method=post> New Course : </Td><Td><Input text name=pcourse> <Input type=submit value=Submit>  </Form></Td>";
+echo "</Tr></Table>";
+echo "</Center>";
+echo "</HTML>";
+?>
